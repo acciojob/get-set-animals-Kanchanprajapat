@@ -1,4 +1,3 @@
-//complete this code
 class Animal {
 	constructor(species) {
         this._species = species;
@@ -20,9 +19,9 @@ class Dog extends Animal {
         super(species);
     }
 
-    // Method to purr
-    purr() {
-        console.log("purr");
+    // Method to bark
+    bark() {
+        console.log("woof");
     }
 }
 
@@ -31,11 +30,12 @@ class Cat extends Animal {
         super(species);
     }
 
-    // Method to bark
-    bark() {
-        console.log("woof");
+    // Method to purr
+    purr() {
+        console.log("purr");
     }
 }
+
 const animal = new Animal("generic");
 console.log(animal.species); // Output: generic
 animal.makeSound(); // Output: Some generic animal sound
